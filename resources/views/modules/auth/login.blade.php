@@ -12,6 +12,7 @@
                 <label for="">Password</label>
                 <input type="password" class="form-control" name="password" required>
                 <button class="btn btn-primary mt-3"> Entrar</button>
+                <a href="{{ route('registro') }}" class="btn btn-info mt-3">Registra nuevo usuario</a>
             </form>
         </div>
     </div>

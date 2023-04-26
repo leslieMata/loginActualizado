@@ -9,7 +9,11 @@ use RealRashid\SweetAlert\Facades\Alert;
 
 class AltasBajas extends Controller
 {
-    
+    public function __construct()
+    {
+       $this->middleware(['auth'])->only(['index']); 
+    }
+
     public function index()
     {
         $items = AltaBaja::all();
